@@ -1,3 +1,3 @@
 # To-Let-Website-By-Prince
 
-![preview video](https://filetransfer.io/data-package/juzdcH1A#link)
+![](docs/docfx/images/MixtureOpen.gif)
