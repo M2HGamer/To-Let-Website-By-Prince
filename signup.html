@@ -1,0 +1,189 @@
+<html>
+<head>
+  <title>Login To ToletService4You.com</title>
+  <style>
+    body{
+      background: url(image8.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: monospace;
+      font-weight: bold;
+    }
+    ul{
+      list-style-type: none;
+      background-color: #000000e0;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: center;
+    }
+    ul li{
+      display: inline-block;
+      position: relative;
+      border-radius: 10px;
+
+    }
+    ul li a{
+      display: block;
+      padding: 20px 25px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 10px;
+/*      margin-left: -18px;*/
+
+    }
+    ul li ul.dropdown li{
+      display: block;
+    }
+    ul li ul.dropdown{
+      width: 100%;
+      background: #0f0f0fe0;
+      position: absolute;
+      z-index: 999;
+      display: none;
+      border-radius: 10px;
+
+    }
+    ul li a:hover{
+      background: black;
+      border-radius: 10px;
+    }
+    ul li:hover ul.dropdown{
+            display: block;
+    }
+    marquee{
+      font-size: 20px;
+      color: white;
+    }
+    #login-card-main{
+      width: 30%;
+      height: 60%;
+      position: relative;
+      top: 50px;
+      left: 480px;
+      background-color: #000000e0;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.5);
+
+    }
+    .Login-heading{
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      font-family: monospace;
+      padding-top: 10px;
+      color: white;
+    }
+    #name{
+    position: relative;
+    left: 120px;
+    top: 100px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    background-color: #3e3e3e;
+}
+ #pass{
+    position: relative;
+    left: -70px;
+    top: 150px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    background-color: #3e3e3e;
+
+}
+input::placeholder{
+  text-align: center;
+  color: white;
+}
+input:hover{
+  border: 1px solid grey;
+}
+input{
+  color: white;
+}
+input:hover{
+      box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.7);
+}
+#submit-card{
+  position: absolute;
+  top: 300px;
+  left: 166px;
+/*  box-shadow: 0 8px 16px rgba(0,0,0,0.2);*/
+}
+#submit{
+  padding: 15px;
+  background-color: #0f0f0fe0;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+#submit:hover{
+      box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.7);
+}
+/*div{
+  filter: blur(5px);
+}*/
+/*@media only screen and (max-width:768px){
+  html{
+    font-size: 1rem;
+    color: red;
+  }
+}*/
+ul .home-text:hover{
+      box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.5);
+}
+.anime{
+    animation: m2h infinite 5s;
+    }
+    @keyframes m2h{
+     0% {
+        color: #fff;
+      }
+     25% {
+        color: grey;
+      }
+      50% {
+        color: #fff;
+      }
+      75% {
+        color: grey;
+      }
+      100% {
+        color: #fff;
+      }
+      }
+</style>
+</head>
+<body>
+  <ul><marquee class="anime">First Login Your Account</marquee></ul>
+  <ul>
+    <li class="home-text"><a href="index.html">H o m e</a>
+      <ul class="dropdown">
+        <!-- <li><a href="index.html">Dashboard</a></li> -->
+        <!-- <li><a href="#">Database</a></li> -->
+      </ul>
+    </li>
+  </ul>
+<div id="login-card-main">
+  <div>
+    <h3 class="Login-heading">Sign Up</h3>
+    <input type="Name" name="Name" id="name" placeholder="Enter Your Name" required autocomplete="">
+    <input type="Password" name="Name" id="Pass" placeholder="Enter Your Password" required autocomplete="">
+  </div>
+
+  <div id="submit-card">
+    <a href="#"><input type="submit" name="submit" value="SUBMIT" id="submit"></a>
+  </div>
+</div>
+</body>
+</html>

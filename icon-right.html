@@ -1,0 +1,502 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+/*			background-color: darkgray;*/
+		}
+		.navbar-heading{
+			width: 100%;
+			height: 10%;
+			background-color: #efefef;
+			border-radius: 7px;
+		}
+		h3{
+			padding: 5px;
+		}
+		.Already{
+			position: relative;
+			top: -20px;
+			left: 5px;
+			font-weight: bold;
+		}
+		.Login-here{
+			position: relative;
+			top: -55px;
+   			left: 145px;
+   			font-size: 12px;
+		}
+		.input-feild{
+			width: auto;
+			height: 80%;
+			background-color: grey;
+			border-radius: 10px;
+		}
+		.cont{
+			width: 50%;
+			height: 100%;
+			float: left;
+			border-radius: 10px;
+
+		}
+		.contact-info{
+			text-align: center;
+			color: whitesmoke;
+		}
+		.first-name{
+			display: inline-block;
+			margin-left: 5px;
+			margin-top: 25px;
+			margin-left: 70px;
+			font-weight: bold;
+			font-size: 20px;
+
+		}
+		.last-name{
+			display: inline-block;
+			margin-left: 5px;
+			margin-top: 15px;
+			margin-left: 70px;
+			font-weight: bold;
+			font-size: 20px;
+
+		}
+		.name{
+			margin-left: 10px;
+		}
+		.pro{
+			width: 50%;
+			height: 100%;
+			background-color: grey;
+			float: right;
+			border-radius: 10px;
+
+		}
+		.input-feild-cont{
+			width: 70%;
+			height: 70%;
+			margin-left: 100px;
+			margin-top: 50px;
+			background-color: #898989;
+			border-radius: 10px;
+		}
+		input{
+			border-radius: 3px;
+			border: 1px solid black;
+			padding: 5px;
+		}
+		.submit{
+			padding: 10px;
+			margin-left: -25px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+				html{
+			scroll-behavior: smooth;
+		}
+		#header{
+			width: 100%;
+			height: 20%;
+			background-color: #ffdbac;
+			border-radius: 10px;
+		}
+		#icon-left{
+			width: 13%;
+			height: 100%;
+			float: left;
+			background-color: gray;
+			border-radius: 5px;
+			background: url(icon-left.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		#icon-right{
+			width: 20%;
+			height: 100%;
+			float: right;
+			background-color: gray;
+			border-radius: 5px;
+            position: relative;
+            top: -70px;
+            background: url(icon-right.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		#p-1{
+			font-weight: bold;
+			font-size: 20px;
+			text-decoration: underline;
+            position: relative;
+            left: 10px;
+            color: red;
+}
+		#p-2{
+			margin-top: -11px;
+			font-weight: bold;
+            position: relative;
+            left: 10px;
+}
+		#login-button{
+			position: relative;
+			left: 750px;
+			top: 15px;
+		}
+		#sign{
+			display: inline-block;
+			background-color: #c1a3a3;
+			padding: 6px;
+			border-radius: 10px;
+			font-weight: 400;
+			font-family: bolder;
+		}
+		#a-sign{
+			color: white;
+		}
+		a{
+			color: black;
+		}
+    .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+}
+
+    /* Slides */
+    .slide {
+        display: none;
+        width: 100%;
+    }
+
+    /* Show first slide by default */
+    .slide:first-child {
+        display: block;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    .navbar-header li{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        position: relative;
+        top: 0px;
+        color: coral;
+    
+    }
+    .navbar-header li:hover{
+        color: red;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+   ul{
+    	list-style-type: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    ul li{
+    	display: inline-block;
+    	font-weight: bold;
+    	font-size: 20px;
+    	padding: 10px;
+    	position: relative;
+        top: 0px;
+    
+    }
+    #input{
+    	width: 100%;
+    	height: 50%;
+    	background-color: grey;
+    	border-radius: 10px;
+    }
+      /* Styles for the input and dropdown */
+  .item-select {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the dropdown list */
+  #item-list {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 200px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  
+  #item-list option {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  #item-list option:hover {
+    background-color: #ddd;
+  }
+  #p-5{
+  	display: inline-block;
+  }
+    .price-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+  }
+  
+  .price-range input[type="text"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 10px;
+  }
+  #co-div-footer{
+  	margin-left: 300px;
+  }
+  #search{
+  	padding: 5px;
+/*  	text-align: center;*/
+   margin-left: 250px;
+  }
+  #submit{
+  	margin-left: 300px;
+  	padding: 5px;
+  }
+
+/*#sell{
+    width: 100%;
+    height: 70%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+#image-sell{
+width: 33.333%;
+height: 49%;
+background-color: cyan;
+}
+#co-rent{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5px;
+}
+*/
+  .container {
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* You can adjust the height as needed */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.item {
+  flex: 1;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-footer {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  background-color: grey;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid #000;
+    /* padding: 4px; */
+    margin: 5px;
+    text-align: center;
+}
+
+#ul-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#ul-footer-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+  @media (max-width:1024px) {
+    #header{
+        width: 1024px auto;
+        height: 120px;
+    }
+    #sign{
+            display: inline-block;
+            position: relative;
+            top: -12px;
+            left: -220px;
+            background-color: #c1a3a3;
+            padding: 6px;
+            border-radius: 10px;
+            font-weight: 400;
+            font-family: bolder;
+        }
+        #input{
+            width: 1007px;
+            height: 305px;
+        }
+        #search {
+             padding: 5px;
+          /* text-align: center; */
+             margin-left: 185px;
+        }
+        #co-div-footer {
+             margin-left: 184px;
+        }
+        #text-area {
+    padding: 15px;
+}
+  }
+
+
+   @media (max-width:768px) {
+    #header{
+        width: 100%;
+        height: 20%;
+    }
+    #p-2 {
+    margin-top: -11px;
+    font-weight: bold;
+    font-size: 9px;
+}
+#p-1 {
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+}
+    #sign{
+            display: inline-block;
+            position: relative;
+            top: -12px;
+            left: -220px;
+            background-color: #c1a3a3;
+            padding: 6px;
+            border-radius: 10px;
+            font-weight: 400;
+            font-family: bolder;
+        }
+        #input{
+            width: 1007px;
+            height: 305px;
+        }
+        #search {
+             padding: 5px;
+          /* text-align: center; */
+             margin-left: 185px;
+        }
+        #co-div-footer {
+             margin-left: 184px;
+        }
+        #text-area {
+    padding: 15px;
+}
+.ul-footer li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    top: -10px;
+    text-decoration-line: line-through;
+}
+	</style>
+</head>
+<body>
+	<header id="header">
+	<div id="icon-left"></div>
+	<p id="p-1">TOLET SERVICE FOR YOU</p>
+	<p id="p-2">FIND YOUR PERFECT ROOM</p>
+	<a href="icon-right.html"><div id="icon-right"></div></a>
+	<div id="login-button">
+		<a href="signup.html" id="a-sign"><p id="sign">SIGN IN</p></a>
+		<a href="register.html" id="a-sign"><p id="sign">SIGN UP</p></a>
+	</div>
+</header>
+<ul class="navbar-header">
+	<a href="index.html"><li>WELCOME</li></a>
+	<a href="about.html"><li>ABOUT US</li></a>
+	<a href="#"><li>SEARCH PROPERTIES</li></a>
+	<a href="#"><li>YOUR FEEDBACK</li></a>
+</ul>
+<div class="navbar-heading"><h3>Post You Properties And Rent It From ToLetService4You.com</h3>
+	<p class="Already">Already A Member?</p> 
+	<a href="#"><p class="Login-here">Log-in To Your Account</p></a>
+</div>
+<br>
+
+
+<div class="input-feild">
+	<div class="cont">
+	<h2 class="Contact-info">Contact Infomation</h2>
+
+	<div class="input-feild-cont">
+<p class="first-name">First Name </p><input type="name" name="name" placeholder="Enter your name" class="name">
+<p class="first-name">Last Name </p><input type="name" name="name" placeholder="Enter your name" class="name">
+<p class="first-name">Email Add</p><input type="name" name="name" placeholder="Enter your name" class="name">
+<p class="first-name">Phone No. </p><input type="name" name="name" placeholder="Enter your name" class="name">
+</div>
+
+</div>
+
+<div class="pro">
+	<h2 class="Contact-info">Properties Infomation</h2>
+
+<div class="input-feild-cont">
+<p class="last-name">Property Type </p><input type="name" name="name" placeholder="Enter your name" class="name">
+<p class="last-name">Upload Image </p><input type="file" name="name" placeholder="Enter your name" class="name">
+<p class="last-name">Property Charge</p><input type="name" name="name" placeholder="Enter your name" class="name">
+<p class="last-name">Property Street Add</p><input type="name" name="name" placeholder="Enter your name" class="name">
+<p class="last-name">City </p><input type="name" name="name" placeholder="Enter your name" class="name"><br>
+<p class="last-name">State </p><input type="name" name="name" placeholder="Enter your name" class="name">
+</div>
+<input type="submit" name="submit" class="submit">
+
+</div>
+
+</div>
+</body>
+</html>
