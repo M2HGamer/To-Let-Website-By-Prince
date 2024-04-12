@@ -5,7 +5,7 @@ https://github.com/M2HGamer/To-Let-Website-By-Prince/assets/154491125/20035a54-0
 
 <h3>Summary Of Website Pages</h3>
 <br>
-<h3>index.html</h3>
+<h3>#index.html 👇</h3>
 <p><h4>Header Section:</h4> Defines the title of the webpage and includes a header element with icons, a title, and login/sign-up buttons.
 
 <h4>Navigation Bar:</h4> Contains links for navigating different sections of the website, such as "WELCOME", "ABOUT US", "SEARCH PROPERTIES", and "YOUR FEEDBACK".
