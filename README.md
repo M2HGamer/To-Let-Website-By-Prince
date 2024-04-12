@@ -5,15 +5,15 @@ https://github.com/M2HGamer/To-Let-Website-By-Prince/assets/154491125/20035a54-0
 
 <h3>Summary Of Main Page [index.html]</h3>
 <br>
-<p>Header Section: Defines the title of the webpage and includes a header element with icons, a title, and login/sign-up buttons.
+<p><h4>Header Section:</h4> Defines the title of the webpage and includes a header element with icons, a title, and login/sign-up buttons.
 
-Navigation Bar: Contains links for navigating different sections of the website, such as "WELCOME", "ABOUT US", "SEARCH PROPERTIES", and "YOUR FEEDBACK".
+<h4>Navigation Bar:</h4> Contains links for navigating different sections of the website, such as "WELCOME", "ABOUT US", "SEARCH PROPERTIES", and "YOUR FEEDBACK".
 
-Slider: Displays a slideshow of property images using CSS and JavaScript.
+<h4>Slider:</h4> Displays a slideshow of property images using CSS and JavaScript.
 
-Search Properties Section: Includes input fields and dropdown lists for searching properties based on location, number of bedrooms, and price range.
+<h4>Search Properties Section:</h4> Includes input fields and dropdown lists for searching properties based on location, number of bedrooms, and price range.
 
-Text Area: Provides information about the website's purpose and services offered.
+<h4>Text Area:</h4> Provides information about the website's purpose and services offered.
 
 Latest Properties for Rent: Displays images of the latest properties available for rent.
 
